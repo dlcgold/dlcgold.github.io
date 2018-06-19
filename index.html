@@ -2,26 +2,78 @@
 <head>
     <title>dlcgold</title><!--titolo-->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+    <link rel="stylesheet" href="css/animation.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
     <body>
         <div class="gif-container"> 
-           <center>
-            <div class="dropdown">
-                    <img src="avatar.png"alt="Avatar" width="60%">
-                    <div class="dropdown-content">
-                      <a href="https://linuxhub.it/" target="_blank"><img src="linuxhub.jpg"  width="30" height="30" alt="LinuxHub"/></a>
-                      <a href="https://t.me/dlcgold" target="_blank"><img src="telegram.png"  width="30" height="30" alt="Telegram"/></a>    
-                      <a href="https://github.com/dlcgold" target="_blank"><img src="github.png"  width="30" height="30" alt="Github"/></a>
-                      <a href="https://plus.google.com/+DavideCozzidlcgold" target="_blank"><img src="google+.png"  width="30" height="30" alt="Google+"/></a>     
-                    </div>
-                  </div> 
-                </center>
-                <center>
+                <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                          <a href="#Chi Sono" onclick="closeNav()">Chi sono</a>
+                          <a href="#Linux Customization" onclick="closeNav()">Linux Customization</a>
+                          <a href="#Links" onclick="closeNav()">Links</a>
+                        </div>
+                      </div>
+                      <span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>                      
+                      
+                      <a name="Chi Sono"><h1 class='elegantshadow'>Chi Sono</h1></a>
+                      <div id="object" class="slideUp"> <center><img src="avatar.png"alt="Avatar" width="20%"></center></div>
+                <center><des>Sono Davide, sono una matricola del corso di informatica col la passione per il mondo Gnu-Linux</des></center>
+            </div>
+            <div class="gif-container2">
+               <a name="Linux Customization"><h1 class='elegantshadow' >Linux Customization</h1></a>
+               <center><des3>Qualche mio setup:</des3></center>
+               <div id="object" class="slideExpandUp">
                     <div class="tech-slideshow">
                     <div class="mover-1"></div>
                     <div class="mover-2"></div>
-                    </div>
-                </center>
+                </center></div> 
         </div> 
+        <div class="gif-container3">
+            <a name="Links"><h1 class='elegantshadow' >Links</h1></a>
+            <div id="object" class="slideRight">
+                <center><des2>LinuxHub, un portale dedicato all'open source e al mondo Gnu/Linux:</des2></center>
+                <a href="https://linuxhub.it/" target="_blank"><img src="linuxhub.jpg"  width="40" height="40" alt="LinuxHub"/></a>
+                <center><des2>Il mio profilo Telegram:</des2></center>
+                <a href="https://t.me/dlcgold" target="_blank"><img src="telegram.png"  width="40" height="40" alt="Telegram"/></a>
+                <center><des2>Il mio prfilo GitHub:</des2></center>    
+                <a href="https://github.com/dlcgold" target="_blank"><img src="github.png"  width="40" height="40" alt="Github"/></a>
+                <center><des2>Il mio Profilo GooglePlus:</des2></center>
+                <a href="https://plus.google.com/+DavideCozzidlcgold" target="_blank"><img src="google+.png"  width="40" height="40" alt="Google+"/></a>  
+             </center></div>
+     </div> 
+        
+     <script>
+            /* Open */
+                  function openNav() {
+                      document.getElementById("myNav").style.height = "100%";
+                  }
+
+                  /* Close */
+                  function closeNav() {
+                      document.getElementById("myNav").style.height = "0%";
+                  } 
+            </script>       
+            
+            <script>
+            $(window).scroll(function() {
+                $('#animatedElement').each(function(){
+                var imagePos = $(this).offset().top;
+        
+                var topOfWindow = $(window).scrollTop();
+                    if (imagePos < topOfWindow+400) {
+                        $(this).addClass("slideUp");
+                    }
+                });
+            });
+        </script>
+        <script>
+                $('#animatedElement').click(function() {
+                    $(this).addClass("slideUp");
+                });
+            </script>
     </body>
 </html>
+
