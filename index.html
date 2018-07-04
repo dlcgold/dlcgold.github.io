@@ -3,77 +3,218 @@
     <title>dlcgold</title><!--titolo-->
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
-    <link rel="stylesheet" href="css/animation.css">
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        body{
+            background-image: url("wall.png");
+            background-attachment: fixed;
+        }
+    </style>
 </head>
     <body>
-        <div class="gif-container"> 
-                <div id="myNav" class="overlay">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <div class="overlay-content">
-                          <a href="#Chi Sono" onclick="closeNav()">Chi sono</a>
-                          <a href="#Linux Customization" onclick="closeNav()">Linux Customization</a>
-                          <a href="#Links" onclick="closeNav()">Links</a>
-                        </div>
-                      </div>
-                      <span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>                      
-                      
-                      <a name="Chi Sono"><h1 class='elegantshadow'>Chi Sono</h1></a>
-                      <div id="object" class="slideUp"> <center><img src="avatar.png"alt="Avatar" width="20%"></center></div>
-                <center><des>Sono Davide, sono una matricola del corso di informatica col la passione per il mondo Gnu-Linux</des></center>
-            </div>
-            <div class="gif-container2">
-               <a name="Linux Customization"><h1 class='elegantshadow' >Linux Customization</h1></a>
-               <center><des3>Qualche mio setup:</des3></center>
-               <div id="object" class="slideExpandUp">
-                    <div class="tech-slideshow">
-                    <div class="mover-1"></div>
-                    <div class="mover-2"></div>
-                </center></div> 
-        </div> 
-        <div class="gif-container3">
-            <a name="Links"><h1 class='elegantshadow' >Links</h1></a>
-            <div id="object" class="slideRight">
-                <center><des2>LinuxHub, un portale dedicato all'open source e al mondo Gnu/Linux:</des2></center>
-                <a href="https://linuxhub.it/" target="_blank"><img src="linuxhub.jpg"  width="40" height="40" alt="LinuxHub"/></a>
-                <center><des2>Il mio profilo Telegram:</des2></center>
-                <a href="https://t.me/dlcgold" target="_blank"><img src="telegram.png"  width="40" height="40" alt="Telegram"/></a>
-                <center><des2>Il mio prfilo GitHub:</des2></center>    
-                <a href="https://github.com/dlcgold" target="_blank"><img src="github.png"  width="40" height="40" alt="Github"/></a>
-                <center><des2>Il mio Profilo GooglePlus:</des2></center>
-                <a href="https://plus.google.com/+DavideCozzidlcgold" target="_blank"><img src="google+.png"  width="40" height="40" alt="Google+"/></a>  
-             </center></div>
-     </div> 
-        
-     <script>
-            /* Open */
-                  function openNav() {
-                      document.getElementById("myNav").style.height = "100%";
-                  }
-
-                  /* Close */
-                  function closeNav() {
-                      document.getElementById("myNav").style.height = "0%";
-                  } 
-            </script>       
-            
-            <script>
-            $(window).scroll(function() {
-                $('#animatedElement').each(function(){
-                var imagePos = $(this).offset().top;
-        
-                var topOfWindow = $(window).scrollTop();
-                    if (imagePos < topOfWindow+400) {
-                        $(this).addClass("slideUp");
-                    }
-                });
-            });
-        </script>
         <script>
-                $('#animatedElement').click(function() {
-                    $(this).addClass("slideUp");
-                });
-            </script>
+            AOS.init();
+        </script>
+        <div data-aos="zoom-in-down">
+            <a name="Chi Sono"><h1 class='elegantshadow'>Ciao!</h1></a>
+        </div>
+        <div data-aos="flip-up">
+                <center><img src="avatar.png" alt="dlcgold" style="width:300px;height:350px;"></center>
+        </div>
+        <div data-aos="zoom-in-up">
+            <aladin>
+                <center>Ciao, sono Davide, uno studente della facolt&agrave di Informatica di Milano bicocca<br>
+                Sono un appassionato del mondo Gnu/Linux da diversi anni, amandone soprattutto la customizzazione<br>
+                Sia per i corsi universitari che per interesse personale sto approfondendo diversi linguaggi di programmazione</center>
+                </aladin>
+        </div>
+        <br><br><br><br><br><br><br>
+        <div data-aos="zoom-in-down">
+            <a name="Screen"><h1 class='elegantshadow'>Ecco qualche mio screen</h1></a>
+        </div>
+        <div data-aos="fade-right">
+            <div class="gallery cf">
+                <div>
+                    <img src="images/1.jpg"/>
+                </div>
+                <div>
+                    <img src="images/2.png"/>
+                </div>   
+                <div>
+                    <img src="images/3.png"/>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-left">
+            <div class="gallery cf">
+                <div>
+                    <img src="images/4.png"/>
+                </div>
+                <div>
+                    <img src="images/5.png"/>
+                </div>   
+                <div>
+                    <img src="images/6.png"/>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-right">
+            <div class="gallery cf">
+                <div>
+                    <img src="images/7.png"/>
+                </div>
+                <div>
+                    <img src="images/8.png"/>
+                </div>   
+                <div>
+                    <img src="images/9.png"/>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-left">
+            <div class="gallery cf">
+                <div>
+                    <img src="images/10.png"/>
+                </div>
+                <div>
+                    <img src="images/11.png"/>
+                </div>   
+                <div>
+                    <img src="images/12.png"/>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-right">
+            <div class="gallery cf">
+                <div>
+                    <img src="images/13.jpg"/>
+                </div>
+                <div>
+                    <img src="images/14.png"/>
+                </div>   
+                <div>
+                    <img src="images/15.png"/>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-left">
+            <div class="gallery cf">
+                <div>
+                    <img src="images/16.jpg"/>
+                </div>
+                <div>
+                    <img src="images/17.png"/>
+                </div>   
+                <div>
+                    <img src="images/18.png"/>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-right">
+            <div class="gallery cf">
+                <div>
+                    <img src="images/19.png"/>
+                </div>
+                <div>
+                    <img src="images/20.jpg"/>
+                </div>   
+                <div>
+                    <img src="images/21.png"/>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-left">
+            <div class="gallery cf">
+            <div>
+                <img src="images/22.png"/>
+            </div>
+            <div>
+                <img src="images/23.png"/>
+            </div>   
+            <div>
+                <img src="images/24.png"/>
+            </div>
+        </div>
+    </div>       
+    <br><br><br><br><br>
+    <div data-aos="zoom-in-down">
+            <a name="Appunti"><h1 class='elegantshadow'>Appunti </h1></a>
+    </div>
+    <br><br>
+    <div data-aos="zoom-in-up">
+        <aladin>
+            <center>Qui troverete alcuni appunti, presi in LaTeX, dei corsi della facolt&agrave di informatica
+            </center>
+        </aladin>
+    </div>
+    <br><br><br>
+    <div data-aos="zoom-in-up">
+        <aladin>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Algebra-geometria:&emsp;&emsp;       Algortimi: &emsp;&emsp;&emsp;&ensp;      Analisi:
+    </aladin>
+</div>
+    <div data-aos="zoom-in">
+            <div class="gallery cf">
+                <div>
+                        <a href="appunti/analisi.pdf" target="_blank" download>
+                            <img border="0" alt="Analisi" src="pdf.png" width="170" height="200">
+                            </a> 
+                </div>
+                <div>
+                        <a href="appunti/algoritmi.pdf" target="_blank" download>
+                            <img border="0" alt="Algoritmi" src="pdf.png" width="170" height="200">
+                            </a> 
+                </div>
+                <div>
+                        <a href="appunti/Algebra-geometria.pdf" target="_blank" download>
+                            <img border="0" alt="Algebra-geometria" src="pdf.png" width="170" height="200">
+                            </a> 
+                </div>
+        </div>
+    </div> 
+    <br><br><br><br><br>
+    <div data-aos="zoom-in-down">
+            <a name="Links"><h1 class='elegantshadow'>Links </h1></a>
+    </div>
+    <br><br>
+    <div data-aos="zoom-in-up">
+            <aladin>
+                <center>Qui troverete qualche links utile per conoscermi meglio!
+                </center>
+            </aladin>
+    </div>
+    <br><br><br>
+    <div data-aos="zoom-in">
+            <div class="gallery cf"> 
+                <div>
+                        <a href="https://t.me/dlcgold" target="_blank" download>
+                            <img border="0" alt="Telegram" src="telegram.png" width="120" height="150">
+                            </a> 
+                </div>
+                <div>
+                        <a href="https://plus.google.com/+DavideCozzidlcgold" target="_blank" download>
+                            <img border="0" alt="G+" src="google+.png" width="120" height="150">
+                            </a> 
+                </div>
+                <div>
+                        <a href="https://linuxhub.it/" target="_blank" download>
+                            <img border="0" alt="LinuxHub" src="linuxhub.jpg" width="100" height="150">
+                            </a> 
+                </div>
+                <div>
+                        <a href="https://github.com/dlcgold" target="_blank" download>
+                            <img border="0" alt="Github" src="github.png" width="120" height="150">
+                            </a> 
+                </div>
+                <div>
+                        <a href="https://www.reddit.com/user/dlcgold" target="_blank" download>
+                            <img border="0" alt="Reddit" src="reddit.png" width="120" height="150">
+                            </a> 
+                </div>
+        </div>
+    </div> 
+
     </body>
 </html>
 
