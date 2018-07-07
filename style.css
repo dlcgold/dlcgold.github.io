@@ -18,6 +18,11 @@ aladin {
     font-size: 25px;
     color:white;
 }
+aladin2 {
+  font-family: 'Aladin';
+  font-size: 45px;
+  color:white;
+}
 #object{
 	background-color:#1C00ff00;
 	visibility: hidden;
@@ -301,4 +306,35 @@ body {
 
 #index-gallery{
   width:465px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(56,60,74);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgba(17, 17, 17, 0);
+}
+
+.active {
+  background-color: rgba(11, 0, 160, 0.568);
 }
