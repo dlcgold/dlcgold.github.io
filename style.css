@@ -27,6 +27,12 @@ aladin2 {
 	background-color:#1C00ff00;
 	visibility: hidden;
 }
+#particles-js canvas{
+  position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+}
 
 html, body {
     height: 100%;
