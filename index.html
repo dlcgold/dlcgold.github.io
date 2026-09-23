@@ -186,8 +186,9 @@ section{ max-width:var(--maxw); margin:0 auto; padding:28px 24px; position:relat
   transition:box-shadow .2s ease; position:relative; display:flex; flex-direction:column; height:100%;
 }
 .proj-card:hover{ box-shadow:var(--elev-2); }
-.proj-card .icon{ font-size:1rem; color:var(--accent); margin-bottom:8px; font-family:'JetBrains Mono',monospace;}
-.proj-card h4{ font-size:.96rem; margin-bottom:6px; display:flex; align-items:center; justify-content:space-between; gap:8px;}
+.proj-card .icon{ color:var(--accent); font-family:'JetBrains Mono',monospace; margin-right:6px;}
+.proj-card h4{ font-size:.96rem; margin-bottom:6px; display:flex; align-items:baseline; justify-content:space-between; gap:8px;}
+.proj-card .title-text{ min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .proj-card p{ color:var(--text-faint); font-size:.82rem; line-height:1.45; margin-bottom:10px; min-height:2.9em;}
 .proj-card a.arrow{ font-size:.82rem; color:var(--text-dim); display:inline-flex; align-items:center; gap:6px; transition:gap .2s ease, color .2s ease; margin-top:auto;}
 .proj-card a.arrow:hover{ color:var(--accent); gap:10px;}
@@ -357,38 +358,32 @@ section{ max-width:var(--maxw); margin:0 auto; padding:28px 24px; position:relat
 
     <div class="proj-grid reveal reveal-stagger">
       <div class="proj-card" style="--i:0">
-        <div class="icon">◇</div>
-        <h4>μ-PBWT <span class="proj-date">09/23</span></h4>
+        <h4><span class="title-text"><span class="icon">◇</span>μ-PBWT</span><span class="proj-date">09/23</span></h4>
         <p>Lightweight r-index of the PBWT for storing and querying UK Biobank-scale haplotype panels in sublinear space. ~3K BioConda downloads.</p>
         <a class="arrow" href="https://github.com/dlcgold/muPBWT" target="_blank" rel="noopener">View repository →</a>
       </div>
       <div class="proj-card" style="--i:1">
-        <div class="icon">◇</div>
-        <h4>gindex <span class="proj-date">07/25</span></h4>
+        <h4><span class="title-text"><span class="icon">◇</span>gindex</span><span class="proj-date">07/25</span></h4>
         <p>Pangenome graph index for exact string-to-graph matching, based on the multidollar-BWT.</p>
         <a class="arrow" href="https://github.com/dlcgold/graph_index" target="_blank" rel="noopener">View repository →</a>
       </div>
       <div class="proj-card" style="--i:2">
-        <div class="icon">◇</div>
-        <h4>pantas <span class="proj-date">12/24</span></h4>
+        <h4><span class="title-text"><span class="icon">◇</span>pantas</span><span class="proj-date">12/24</span></h4>
         <p>First tool for alternative splicing detection and quantification on pangenome graphs.</p>
         <a class="arrow" href="https://github.com/AlgoLab/pantas" target="_blank" rel="noopener">View repository →</a>
       </div>
       <div class="proj-card" style="--i:3">
-        <div class="icon">◇</div>
-        <h4>μ-PBWT · extensions <span class="proj-date">06/24–07/25</span></h4>
+        <h4><span class="title-text"><span class="icon">◇</span>μ-PBWT · extensions</span><span class="proj-date">06/24–07/25</span></h4>
         <p>Branches of μ-PBWT for genotype phasing and k-mismatch maximal matches.</p>
         <a class="arrow" href="https://github.com/dlcgold/muPBWT/branches" target="_blank" rel="noopener">View branches →</a>
       </div>
       <div class="proj-card" style="--i:4">
-        <div class="icon">◇</div>
-        <h4>ESGq <span class="proj-date">06/23</span></h4>
+        <h4><span class="title-text"><span class="icon">◇</span>ESGq</span><span class="proj-date">06/23</span></h4>
         <p>Graph-based model for alternative splicing quantification on a linear reference.</p>
         <a class="arrow" href="https://github.com/AlgoLab/ESGq" target="_blank" rel="noopener">View repository →</a>
       </div>
       <div class="proj-card" style="--i:5">
-        <div class="icon">◇</div>
-        <h4>RLPBWT <span class="proj-date">04/22</span></h4>
+        <h4><span class="title-text"><span class="icon">◇</span>RLPBWT</span><span class="proj-date">04/22</span></h4>
         <p>Run-length encoded PBWT, the foundation later developed into μ-PBWT.</p>
         <a class="arrow" href="https://github.com/dlcgold/rlpbwt" target="_blank" rel="noopener">View repository →</a>
       </div>
